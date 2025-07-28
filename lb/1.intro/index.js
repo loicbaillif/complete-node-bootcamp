@@ -12,9 +12,11 @@ console.log('File output.txt written.');
 
 // Read/write to a file (asynchronous method)
 fs.readFile(
-    './../../1-node-farm/starter/txt/start.txt',
+    './../../1-node-farm/starter/txt/startttt.txt',
     'utf-8',
     (err, data1) => {
+        if (err) return console.log('GIGANTIC ERROR! ');
+
         fs.readFile(
             `./../../1-node-farm/starter/txt/${data1}.txt`,
             'utf-8',
