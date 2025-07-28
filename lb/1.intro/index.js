@@ -12,7 +12,7 @@ console.log('File output.txt written.');
 
 // Read/write to a file (asynchronous method)
 fs.readFile(
-    './../../1-node-farm/starter/txt/startttt.txt',
+    './../../1-node-farm/starter/txt/start.txt',
     'utf-8',
     (err, data1) => {
         if (err) return console.log('GIGANTIC ERROR! ');
@@ -33,6 +33,7 @@ fs.readFile(
                             'utf-8',
                                 err => {
                                 console.log('File has been written. \\o/');
+                                if (err) return console.log(`\n\t***** ${err} *****\n`);
                         })
                     });
             });
