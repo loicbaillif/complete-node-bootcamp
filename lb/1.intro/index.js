@@ -17,3 +17,5 @@ fs.readFile(
     (err, data) => {
        console.log(data);
     });
+
+console.log('File is being read');
